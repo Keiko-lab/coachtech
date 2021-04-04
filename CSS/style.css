@@ -1,0 +1,649 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+/* 01_header */
+.header {
+  height: 30px;
+  width: 800px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  font-size: x-small;
+}
+
+/* 02_main */
+.main {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main p{
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 30px;
+  color: #ccc;
+  line-height: 1;
+}
+
+#news {
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  height: 50px;
+  width: 400px;
+  background: rgb(252, 252, 252);
+}
+
+
+#news-button {
+  position: absolute;
+  top: 400px;
+  left: 750px;
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+#news h1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-style: italic;
+  font-size: xx-small;
+  color: black;
+}
+
+#news h2 {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  font-style: italic;
+  font-size: xx-small;
+  color: black;
+}
+
+#news-button h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: xx-small;
+  text-align: center;
+  color: #ccc;
+}
+
+
+
+/* 04_concept */
+
+.concept {
+  position: relative;
+  height: 250px;
+  width: 800px;
+  background: black no-repeat;
+}
+
+.concept h1{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-style: italic;
+  font-size: larger;
+  color: #ccc;
+}
+
+.concept h2{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-style: italic;
+  font-size: x-small;
+  color: #ccc;
+}
+
+.concept-button {
+  position:  absolute;
+  width: 150px;
+  height: 30px;
+  top: 70%;
+  left: 10%;
+  font-size: 10px;
+  background: white;
+  color: #050505;
+  text-decoration: none; /* テキストのスタイルを消す */
+  border: 1px rgb(109, 105, 105); /* 境界線を引く */
+}
+
+.concept-button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: italic;
+  font-size: x-small;
+  transform: translate(-50%, -50%);
+}
+
+.space {
+  position: relative;
+  height: 100px;
+  width: 800px;
+  background: rgb(250, 250, 250) ;
+  }
+
+.concept-img {
+  position:  absolute;
+  top: -200px;
+  left: 50%;
+  opacity: 0.5;  /* ぼかす */
+}
+
+
+
+/* 05_service */
+.service {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  background: rgb(196, 194, 194);
+  }
+
+.service-title p {
+  position:  absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  font-size: 20px;
+  font-weight: bold;
+  color: #050505;
+}
+
+.service-img1 {
+  position:  absolute;
+  top: 10%;
+  right: 0%;
+}
+
+.service-img2 {
+  position:  absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.sb1 {
+  position:  absolute;
+  top: 15%;
+  right: 50%;
+  width: 400px;
+  height: 200px;
+  background: rgb(250, 250, 250) no-repeat;
+}
+
+.sb2 {
+  position:  absolute;
+  top: 60%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  background: rgb(250, 250, 250) no-repeat;
+}
+
+.sb1 h1 {
+  position:  absolute;
+  top: 20%;
+  left: 10%;
+  color: black;
+  font-size: large;
+  font: bold;
+}
+
+.sb1 h2 {
+  position:  absolute;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  color: black;
+  font-size: x-small;
+  font: bold;
+}
+
+.service-botton {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 120px;
+  height: 30px;
+  color: black;
+  border: 1px black solid; /* 境界線を引く */
+  border-radius: 3px; /* 要素の角を丸くする */
+}
+
+.service-botton p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: italic;
+  font-size: x-small;
+  transform: translate(-50%, -50%);
+}
+.sb2 h3 {
+  position:  absolute;
+  top: 20%;
+  left: 10%;
+  color: black;
+  font-size: large;
+  font: bold;
+}
+
+.sb2 h4 {
+  position:  absolute;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  color: black;
+  font-size: x-small;
+  font: bold;
+}
+
+.service-botton2 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 120px;
+  height: 30px;
+  color: black;
+  border: 1px black solid; /* 境界線を引く */
+  border-radius: 3px; /* 要素の角を丸くする */
+}
+
+.service-botton2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: italic;
+  font-size: x-small;
+  transform: translate(-50%, -50%);
+}
+
+/* 06_company */
+
+.company {
+  position: relative;
+  height: 250px;
+  width: 800px;
+  background: rgb(250, 250, 250) no-repeat;
+  }
+
+.name1 {
+  position:  absolute;
+  width: 380px;
+  height: 100px;
+  top: 20%;
+  left:0%;
+  background: url(../img/company.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.name1 h1 {
+  position:  absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: large;
+  font: bold;
+}
+
+.name1 h2 {
+  position:  absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: xx-small;
+  font: bold;
+}
+
+.name2 {
+  position:  absolute;
+  width: 380px;
+  height: 100px;
+  top: 20%;
+  right: 0%;
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.name2 h3 {
+  position:  absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: large;
+  font: bold;
+}
+
+
+.name2 h4 {
+  position:  absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: xx-small;
+  font: bold;
+}
+
+
+/* 07_FAQ */
+.FAQ {
+  position: relative;
+  height: 100px;
+  width: 600px;
+  left: 100px;
+  background: black;
+  background-position: center;
+}
+
+
+
+.FAQ h1 {
+  position:  absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  color: #ccc;
+  font: bold;
+  font-size: larger;
+}
+
+.FAQ h2 {
+  position:  absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: x-small;
+}
+
+.space2 {
+  position: relative;
+  height: 100px;
+  width: 800px;
+  background: white;
+  background-position: center;
+}
+
+/* 08_contact */
+.contact {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact h1 {
+  position:  absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font: bold;
+  font-size: larger;
+}
+
+.contact h2 {
+  position:  absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font: bold;
+  font-size:xx-small;
+}
+
+.contact h3 {
+  position:  absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font: bold;
+  font-size: larger;
+}
+
+.contact h4 {
+  position:  absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  color: #ccc;
+  font-size: 6pt;
+}
+
+  
+.contact-button {
+  position: absolute;
+  display: flex;
+  top: 75%;
+  left: 50%;
+  width: 120px;
+  height: 30px;
+  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
+  text-decoration: none; /* テキストのスタイルを消す */
+  border: 0.2px #ccc solid; /* 境界線を引く */
+}
+
+.contact-button p { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: italic;
+  font-size: x-small;
+  transform: translate(-50%, -50%);
+}
+
+/* 09_footer */
+.footer {
+  position: relative;
+  width: 800px;
+  height: 30px;
+  align-items: center;
+  background: #000;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  align-items: center;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+.footer-nav ul{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+  margin-bottom: 30px;
+  font-size: x-small;
+}
+
+.footer-copyright{
+  position: relative;
+  width: 800px;
+  height: 10px;
+  background: #000;
+  margin-bottom: 0px;
+}
+
+.footer-copyright p {  
+  position: absolute;
+  left: 40%;
+  align-items: center;
+  color: #ccc;
+  font: bold;
+  text-align: center;
+  font-size: x-small;
+}
+
