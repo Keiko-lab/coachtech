@@ -134,13 +134,22 @@ input, select {
 /* 02_main */
 .main {
   position: relative;
+  height: 100%;
+  background: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 03_intro */
+.intro{
+  position: relative;
   height: 400px;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.main p{
+.intro p{
   position: absolute;
   top: 60%;
   left: 30%;
@@ -151,26 +160,38 @@ input, select {
   line-height: 1;
 }
 
-#news {
+/* 03_news*/
+
+.news {
   position: absolute;
-  top: 400px;
-  left: 350px;
+  top: 350px;
+  left: 50%;
   height: 50px;
-  width: 400px;
+  width: 50%;
   background: rgb(252, 252, 252);
 }
 
-
-#news-button {
+.news-button {
   position: absolute;
-  top: 400px;
-  left: 750px;
+  left: 90%;
   height: 50px;
-  width: 50px;
+  width: 100px;
   background: black;
 }
 
-#news h1 {
+.news-button h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: xx-small;
+  text-align: center;
+  color: #ccc;
+}
+
+
+.news h1 {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -179,25 +200,15 @@ input, select {
   color: black;
 }
 
-#news h2 {
+.news h2 {
   position: absolute;
-  top: 30%;
-  left: 0%;
+  top: 50%;
+  left: 3%;
   font-style: italic;
   font-size: xx-small;
   color: black;
 }
 
-#news-button h3 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-style: italic;
-  font-size: xx-small;
-  text-align: center;
-  color: #ccc;
-}
 
 
 
@@ -249,17 +260,11 @@ input, select {
   transform: translate(-50%, -50%);
 }
 
-.space {
-  position: relative;
-  height: 100px;
-  background: rgb(250, 250, 250) ;
-  }
 
 .concept-img {
   position:  absolute;
-  top: -200px;
+  top: 30%;
   left: 50%;
-  opacity: 0.5;  /* ぼかす */
 }
 
 
@@ -267,6 +272,7 @@ input, select {
 /* 05_service */
 .service {
   position: relative;
+  top: 150px;
   height: 800px;
   background: rgb(196, 194, 194);
   }
@@ -390,44 +396,41 @@ input, select {
   transform: translate(-50%, -50%);
 }
 
-.space3 {
-  position: relative;
-  height: 100px;
-  background: white;
-  background-position: center;
-}
 
 
 /* 06_company */
 
 .company {
   position: relative;
+  top: 200px;
   height: 250px;
-  background: rgb(250, 250, 250) no-repeat;
+  display: flex;
   }
 
 .name1 {
   position:  absolute;
-  width: 380px;
   height: 100px;
-  top: 20%;
-  left:30%;
+  width: 40%;
+  top: 10%;
+  right: 0%;
+  padding:10px;
+  margin: 10px;
   background: url(../img/company.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
 }
 
 .name2 {
   position:  absolute;
-  width: 380px;
   height: 100px;
-  top: 20%;
-  left:70%;
+  width: 40%;
+  top: 10%;
+  left: 0%;
+  padding:10px;
+  margin: 10px;
   background: url(../img/recruit.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
 }
 
 .name1 h1 {
@@ -480,6 +483,7 @@ input, select {
 /* 07_FAQ */
 .FAQ {
   position: relative;
+  top: 200px;
   height: 100px;
   width: 800px;
   left: 50%;
@@ -508,16 +512,11 @@ input, select {
   font-size: x-small;
 }
 
-.space2 {
-  position: relative;
-  height: 100px;
-  background: white;
-  background-position: center;
-}
 
-/* 08_contact */
+/* 09_contact */
 .contact {
   position: relative;
+  top: 200px;
   height: 400px;
   background: url(../img/contact-bg.jpg) no-repeat;
   background-size: cover;
@@ -592,18 +591,23 @@ input, select {
   transform: translate(-50%, -50%);
 }
 
-/* 09_footer */
+
+/* 10_footer */
 .footer {
   position: relative;
+  width: 100%;
   height: 30px;
+  bottom: 0;
+  margin-bottom: -30px;
   align-items: center;
   background: #000;
 }
 
+
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer-logo {
@@ -612,31 +616,33 @@ input, select {
   margin-left: 35px;
   align-items: center;
   color: #f2f2f2;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer-nav ul{
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer-nav li {
   margin-right: 35px;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer-nav a {
   color: #f2f2f2;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: x-small;
 }
 
 .footer-copyright{
   position: relative;
+  width: 100%;
   height: 10px;
+  bottom: 0;
+  margin-bottom: -10px;
   background: #000;
-  margin-bottom: 0px;
 }
 
 .footer-copyright p {  
@@ -647,5 +653,6 @@ input, select {
   font: bold;
   text-align: center;
   font-size: x-small;
+  margin-bottom: 0;
 }
 
