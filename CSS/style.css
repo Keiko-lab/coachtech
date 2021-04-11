@@ -274,6 +274,7 @@ input, select {
   position: relative;
   top: 150px;
   height: 800px;
+  display: flex;
   background: rgb(196, 194, 194);
   }
 
@@ -289,16 +290,14 @@ input, select {
 
 .service-img1 {
   position:  absolute;
-  top: 30%;
-  left: 60%;
-  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  top: 10%;
+  right: 0;
 }
 
 .service-img2 {
   position:  absolute;
-  top: 70%;
-  left: 40%;
-  transform: translate(-50%, -50%); /* 基準位置を左上から真ん中にする */
+  top: 55%;
+  left: 0;
 }
 
 .sb1 {
