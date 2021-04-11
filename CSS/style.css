@@ -303,7 +303,7 @@ input, select {
 .sb1 {
   position:  absolute;
   top: 15%;
-  right: 50%;
+  left: 20%;
   width: 400px;
   height: 200px;
   background: rgb(250, 250, 250) no-repeat;
@@ -312,7 +312,7 @@ input, select {
 .sb2 {
   position:  absolute;
   top: 60%;
-  left: 50%;
+  right: 20%;
   width: 400px;
   height: 200px;
   background: rgb(250, 250, 250) no-repeat;
